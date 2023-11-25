@@ -1,0 +1,61 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    
+<div class="container mt-3">
+  
+
+    <div class="container p-5 my-5 bg-warning border">
+        <h1>Discuss the scope of var, let, and const
+        </h1>
+        <p>
+            <ul>
+                <li><b>Var</b>: JavaScript variables are declared using the var keyword. Function-scoped variables are those that are defined with var; if they are declared outside of any function, they are available worldwide. Var is distinguished by the fact that, in the execution phase, it is elevated to the top of its scope, making it accessible prior to its actual declaration in the code. Var variables can also be reassigned and redeclared inside the same scope, which occasionally results in unexpected behavior.</li>
+
+                <li><b>Let</b>: ECMAScript 6 introduced the let keyword, which is used to declare variables that are scoped to blocks. Let is restricted to the block, statement, or expression in which it is declared, unlike var. It becomes a more dependable option for variable scoping as a result. Let-declared variables are only available after the moment of declaration because they are not hoisted to the top of their block. Furthermore, let permits the reassignment of variables but forbids redeclaration within the same scope.</li>
+
+                <li><b>Const</b>: Constants, or variables whose values cannot be changed after declaration, are declared with the const keyword. Like let, const is not hoisted to the top of its block; instead, it is block-scoped. It cannot be reassigned after it has been initialized with a value at the time of definition. Because of this, const is appropriate for values that need to stay the same during the course of the program. It makes the code more readable by indicating that it is intended for the variable's value to remain constant.</li>
+
+            </ul>
+        </p>
+
+      </div>
+      
+      <div class="container p-5 my-5 bg-dark text-white">
+        <h1>Tell us the use cases of null and undefined</h1>
+        <ul>
+            <li><b>Null</b>: It is frequently used to expressly state that an operation produced no meaningful results or that a variable or object property has no assigned value. To show that a variable hasn't been given a value yet, you may, for instance, set it to null.</li>
+
+            <li><b>Undefined</b>:<br> Implicit Absence of Value: Variables that are declared but not initialized automatically have the value undefined. This indicates that the variable exists, but no value has been assigned to it.</li> <br>
+            Function Parameters: The remaining parameters are automatically set to undefined when a function is called with fewer arguments than declared.
+            
+        </ul>
+      </div>
+      
+      <div class="container p-5 my-5 bg-primary text-white">
+        <h1>What do you mean by REST API?</h1>
+        <p>
+            Representational State Transfer, or REST, is an architectural approach used in the creation of networked applications. A REST API, or application programming interface, is a kind of interface that adheres to the REST principles and facilitates internet-based communication across various software applications.
+        </p>
+      </div>
+
+
+
+
+</div>
+
+</body>
+</html>
+
+
