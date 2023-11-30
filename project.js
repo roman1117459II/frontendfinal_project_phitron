@@ -1,5 +1,5 @@
 const loaddata0 =(global) => {
-    // console.log("Hello");
+
     fetch("https://openapi.programming-hero.com/api/videos/category/1000")
     .then((res) => res.json())
     .then((datas) => displayData(datas.data));
@@ -7,13 +7,7 @@ const loaddata0 =(global) => {
 }
 
 
-// const loadData = (category) => {
 
-//     fetch(`https://openapi.programming-hero.com/api/videos/category/${category}`)
-    
-//     .then((res) => res.json())
-//     .then((datas) => displayData(datas.data))
-// };
 
 const loaddata = (category) => {
     fetch(`https://openapi.programming-hero.com/api/videos/category/${category}`)
@@ -26,7 +20,7 @@ const loaddata = (category) => {
 
 
 const loadmusic = (category) => {
-    // console.log("Hello");
+ 
     fetch(`https://openapi.programming-hero.com/api/videos/category/${category}`)
     .then((res) => res.json())
     .then((datas) => displayData1(datas.data));
@@ -34,7 +28,7 @@ const loadmusic = (category) => {
 }
 
 const loadcomedy = (category) => {
-    // console.log("Hello");
+
     fetch(`https://openapi.programming-hero.com/api/videos/category/${category}`)
     .then((res) => res.json())
     .then((datas) => displayData2(datas.data));
@@ -44,7 +38,7 @@ const loadcomedy = (category) => {
 
 
 const loaddrawing = (category) => {
-    // console.log("Hello");
+  
     fetch(`https://openapi.programming-hero.com/api/videos/category/${category}`)
     .then((res) => res.json())
     .then((datas) => displayData3(datas.data));
@@ -224,7 +218,7 @@ const sortDataByViews = (category) => {
             const sortedData = datas.data.sort((a, b) => {
                 const viewsA = parseFloat(a.others.views.replace(/[^\d.]/g, ''));
                 const viewsB = parseFloat(b.others.views.replace(/[^\d.]/g, ''));
-                return viewsB - viewsA; // Sort in descending order
+                return viewsB - viewsA; 
             });
 
             displayData(sortedData, `${category === 1000 ? 'media-container' : `${category === 1001 ? 'music-container' : `${category === 1003 ? 'comedy-container' : 'drawing-container'}`}`}`);
@@ -236,7 +230,7 @@ const sortDataByViews = (category) => {
 };
 
 document.getElementById("sortBtn").addEventListener("click", () => {
-    sortDataByViews(1000); // Assuming 1000 is the category for 'All'
+    sortDataByViews(1000); 
 });
 
 
